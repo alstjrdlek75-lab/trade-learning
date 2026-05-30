@@ -522,6 +522,66 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Q5 -->
+            <div class="question-container" data-q-id="u2-q5">
+                <div class="question-header">
+                    <span class="q-num">Q5</span>
+                    <span class="q-title">[교역조건 범위] 양국 간 자발적 교역이 성립하여 무역 이익을 얻을 수 있는 교역조건의 범위를 각각 도출하시오.</span>
+                </div>
+                <div class="question-body">
+                    <div class="concept-check-box text-blue">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <span>
+                            교역조건 설정 원리: 양국이 자발적 교역에 참여하기 위해서는 교역조건(상대가격)이 <strong>양국의 국내 기회비용 사이에 위치</strong>해야 합니다.
+                        </span>
+                    </div>
+                    
+                    <div class="write-box mt-3">
+                        <span class="sub-label">① 의류 1벌당 신발 교환조건 범위:</span>
+                        <div class="formula-inputs">
+                            <div class="input-wrapper inline-flex">
+                                신발 
+                                <input type="text" class="input-text inline-input align-center" placeholder="하한값" data-answer="1/2|0.5" data-feedback-id="u2-q5-clothes-min-fb"> 켤레
+                                <span class="teacher-answer" data-answer-target="u2-q5-clothes-min">1/2 (또는 0.5)</span>
+                            </div>
+                            <span class="inequality-symbol">&lt;</span>
+                            <span class="middle-item">의류 1벌</span>
+                            <span class="inequality-symbol">&lt;</span>
+                            <div class="input-wrapper inline-flex">
+                                신발 
+                                <input type="text" class="input-text inline-input align-center" placeholder="상한값" data-answer="2" data-feedback-id="u2-q5-clothes-max-fb"> 켤레
+                                <span class="teacher-answer" data-answer-target="u2-q5-clothes-max">2</span>
+                            </div>
+                        </div>
+                        
+                        <span class="sub-label mt-3">② 신발 1켤레당 의류 교환조건 범위:</span>
+                        <div class="formula-inputs">
+                            <div class="input-wrapper inline-flex">
+                                의류 
+                                <input type="text" class="input-text inline-input align-center" placeholder="하한값" data-answer="1/2|0.5" data-feedback-id="u2-q5-shoes-min-fb"> 벌
+                                <span class="teacher-answer" data-answer-target="u2-q5-shoes-min">1/2 (또는 0.5)</span>
+                            </div>
+                            <span class="inequality-symbol">&lt;</span>
+                            <span class="middle-item">신발 1켤레</span>
+                            <span class="inequality-symbol">&lt;</span>
+                            <div class="input-wrapper inline-flex">
+                                의류 
+                                <input type="text" class="input-text inline-input align-center" placeholder="상한값" data-answer="2" data-feedback-id="u2-q5-shoes-max-fb"> 벌
+                                <span class="teacher-answer" data-answer-target="u2-q5-shoes-max">2</span>
+                            </div>
+                        </div>
+
+                        <div class="textarea-wrapper mt-3">
+                            <span class="sub-label d-block mb-1">교역 조건 도출의 근거 기술:</span>
+                            <textarea class="input-textarea" rows="3" placeholder="의류 및 신발 각각의 기회비용과 연계하여 양국이 무역 이익을 얻을 수 있는 이유를 기술하십시오." data-answer-keyword="기회비용|이득|이익|하한|상한" data-feedback-id="u2-q5-reason-fb"></textarea>
+                            <div class="teacher-answer block-type" data-answer-target="u2-q5-reason">
+                                자발적 교역이 성립하기 위한 교역조건은 양국의 자국 생산 기회비용 사이에서 결정되어야 합니다. 의류 1벌의 교역비율은 양국의 의류 기회비용 범위인 신발 0.5켤레 초과 2켤레 미만이어야 하며, 신발 1켤레의 교역비율 또한 양국의 신발 기회비용 범위인 의류 0.5벌 초과 2벌 미만이어야 합니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- 유형 3 섹션 (생산가능곡선 작도와 비교우위) -->
@@ -987,7 +1047,7 @@
             <div class="score-container">
                 <div class="score-info" id="score-info" style="display: none; align-items: center; gap: 8px;">
                     <span class="score-title"><i class="fa-solid fa-list-check"></i> 채점 결과:</span>
-                    <span class="score-value" id="current-score">0 / 35</span>
+                    <span class="score-value" id="current-score">0 / 40</span>
                     <span class="percentage" id="score-percentage">(0%)</span>
                 </div>
                 <button class="btn btn-success" id="grade-btn" style="padding: 10px 24px; border-radius: 30px; font-weight: 700; box-shadow: var(--shadow-sm); transition: var(--transition);">
@@ -1082,6 +1142,14 @@
                                 <li>신발 기회비용은 B국(의류 0.5벌)이 A국(의류 2벌)보다 낮으므로 <strong>B국이 신발 생산에 특화</strong>합니다.</li>
                             </ul>
                         </li>
+                        <li>
+                            <strong>Q5. 교역조건 범위:</strong>
+                            <ul>
+                                <li>의류 1벌당 신발 교환 비율: 양국의 의류 기회비용 범위인 <strong>신발 0.5켤레 초과, 2켤레 미만</strong> ($0.5 < \text{의류 1벌} < 2$)</li>
+                                <li>신발 1켤레당 의류 교환 비율: 양국의 신발 기회비용 범위인 <strong>의류 0.5벌 초과, 2벌 미만</strong> ($0.5 < \text{신발 1켤레} < 2$)</li>
+                            </ul>
+                            자발적 무역에 참여하려면 각국은 기회비용보다 유리한 가격에 거래를 해야 하므로, 교환 비율은 항상 양국의 국내 기회비용 사이에서 결정됩니다.
+                        </li>
                     </ul>
                 </div>
 
@@ -1174,7 +1242,7 @@
                 <div class="modal-score-box">
                     <span class="modal-score-label">최종 취득 점수</span>
                     <div class="modal-score-values">
-                        <span class="modal-score-value" id="modal-score-text">0 / 35</span>
+                        <span class="modal-score-value" id="modal-score-text">0 / 40</span>
                         <span class="modal-score-percent" id="modal-percent-text">(0%)</span>
                     </div>
                 </div>
