@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경제학 실습 활동지: 리카도 무역 이론 (절대우위와 비교우위)</title>
+    <!-- Google Fonts: 본문 Noto Sans KR, 정답 펜글씨 Nanum Pen Script, 숫자/영문 Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css?v=2.0">
+</head>
+<body>
+    <!-- 컨트롤러 (인쇄 및 모드 전환) -->
+    <div class="control-panel no-print">
+        <div class="panel-container">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>통합사회 & 경제 활동지</span>
+            </div>
+            <div class="controls">
+                <button class="btn btn-secondary" id="reset-btn">
+                    <i class="fa-solid fa-rotate-left"></i> 초기화
+                </button>
+                <button class="btn btn-primary" id="print-btn">
+                    <i class="fa-solid fa-print"></i> PDF/인쇄하기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 메인 활동지 컨테이너 -->
+    <div class="worksheet-container">
+        <!-- 헤더 영역 -->
+        <header class="worksheet-header">
+            <div class="badge">고등학교 통합사회 · 경제</div>
+            <h1>국제 무역 원리 실습: <span>절대우위와 비교우위</span></h1>
+            <p class="subtitle">절대우위, 비교우위, 기회비용, 교역조건에 대한 단계별 탐구 분석</p>
+            
+            <div class="student-info-box">
+                <div class="info-item"><span class="underline-field" contenteditable="true">　　</span>학년 <span class="underline-field" contenteditable="true">　　</span>반 <span class="underline-field" contenteditable="true">　　</span>번</div>
+                <div class="info-item">이름: <span class="underline-field" contenteditable="true">　　　　</span></div>
+            </div>
+
+            <!-- 작성 안내 -->
+            <div class="teacher-note">
+                <div class="note-title"><i class="fa-solid fa-circle-info"></i> 작성 안내 (Guide)</div>
+                <p>
+                    본 활동지는 고등학교 통합사회 및 경제 과목의 국제 무역 핵심 개념인 절대우위, 비교우위, 기회비용 및 교역조건을 단계별 분석을 통해 도출하도록 구성되어 있습니다. 
+                    <strong>[생산량 기준 모형]</strong>과 <strong>[생산비용(노동시간) 기준 모형]</strong>의 기회비용 도출 원리 차이에 유의하며, 아래 문항의 빈칸을 완성하고 풀이 과정을 논리적으로 작성해 봅시다.
+                </p>
+            </div>
+        </header>
+
+        <!-- 유형 1 섹션 -->
+        <section class="worksheet-section page-break">
+            <div class="section-title">
+                <span class="section-number">분석 1</span>
+                <h2>생산량 기준 모형 <small>(동일한 생산요소 투입 시 최대 산출량)</small></h2>
+            </div>
+            
+            <div class="problem-box">
+                <p class="problem-statement">
+                    <strong>[설정]</strong> 다음 표는 X국과 Y국이 동일한 단위의 노동력(생산요소)을 투입하여 하루 동안 최대로 생산할 수 있는 재화인 '자동차'와 '스마트폰'의 수량을 나타냅니다. 다음 물음에 답하시오.
+                </p>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>국가</th>
+                            <th>자동차 (최대 생산량)</th>
+                            <th>스마트폰 (최대 생산량)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="nation-name">X국</td>
+                            <td><span class="number">10</span> 대</td>
+                            <td><span class="number">20</span> 대</td>
+                        </tr>
+                        <tr>
+                            <td class="nation-name">Y국</td>
+                            <td><span class="number">15</span> 대</td>
+                            <td><span class="number">15</span> 대</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-tip"><i class="fa-solid fa-circle-info"></i> 생산량 기준 모형에서는 동일 투입 대비 산출량이 <strong>클수록</strong> 해당 재화 생산에 생산성 우위(절대우위)를 가집니다.</div>
+            </div>
+
+            <!-- Q1 -->
+            <div class="question-container" data-q-id="u1-q1">
+                <div class="question-header">
+                    <span class="q-num">Q1</span>
+                    <span class="q-title">[절대우위 판정] 자동차와 스마트폰 생산에 있어 각각 절대우위를 점하는 국가를 명시하고, 그 근거를 기술하시오.</span>
+                </div>
+                <div class="question-body">
+                    <div class="write-box">
+                        <div class="input-group-row">
+                            <span class="sub-label">자동차 절대우위 국가:</span>
+                            <div class="input-wrapper">
+                                <input type="text" class="input-text short align-center" placeholder="국가명" data-answer="Y국" data-feedback-id="u1-q1-car-fb">
+                                <span class="teacher-answer" data-answer-target="u1-q1-car">Y국</span>
+                            </div>
+                        </div>
+                        <div class="input-group-row">
+                            <span class="sub-label">스마트폰 절대우위 국가:</span>
+                            <div class="input-wrapper">
+                                <input type="text" class="input-text short align-center" placeholder="국가명" data-answer="X국" data-feedback-id="u1-q1-phone-fb">
+                                <span class="teacher-answer" data-answer-target="u1-q1-phone">X국</span>
+                            </div>
+                        </div>
+                        <div class="textarea-wrapper mt-3">
+                            <span class="sub-label d-block mb-1">판정 근거 기술:</span>
+                            <textarea class="input-textarea" rows="3" placeholder="생산 가능 수량 비교를 토대로 설명하십시오." data-answer-keyword="더 많이|최대 생산량|많이 생산" data-feedback-id="u1-q1-reason-fb"></textarea>
+                            <div class="teacher-answer block-type" data-answer-target="u1-q1-reason">
+                                동일한 노동력을 투입하여 생산할 수 있는 최대 생산량을 비교했을 때, 자동차는 Y국(15대 &gt; 10대)이 더 많이 생산하고 스마트폰은 X국(20대 &gt; 15대)이 더 많이 생산하므로 각각 절대우위를 가집니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="question-container" data-q-id="u1-q2">
+                <div class="question-header">
+                    <span class="q-num">Q2</span>
+                    <span class="q-title">[기회비용 공식 완성] 생산량 기준 모형에서 특정 재화의 기회비용을 도출하는 다음 공식의 빈칸을 완성하시오.</span>
+                </div>
+                <div class="question-body">
+                    <div class="formula-box">
+                        <div class="formula">
+                            <span class="formula-left">재화 A 1단위 생산의 기회비용</span>
+                            <span class="formula-equal">=</span>
+                            <span class="fraction">
+                                <span class="numerator">
+                                    <div class="input-wrapper">
+                                        <select class="input-text inline-input align-center" style="width: 190px;" data-answer="포기하는 B의 생산량" data-feedback-id="u1-q2-num-fb">
+                                            <option value="">-- 선택 --</option>
+                                            <option value="포기하는 B의 생산량">포기하는 B의 생산량</option>
+                                            <option value="얻고자 하는 A의 생산량">얻고자 하는 A의 생산량</option>
+                                            <option value="재화 A 생산에 필요한 노동 시간">재화 A 생산에 필요한 노동 시간</option>
+                                            <option value="재화 B 생산에 필요한 노동 시간">재화 B 생산에 필요한 노동 시간</option>
+                                        </select>
+                                        <span class="teacher-answer" data-answer-target="u1-q2-num">포기하는 B의 생산량</span>
+                                    </div>
+                                </span>
+                                <span class="denominator">
+                                    <div class="input-wrapper">
+                                        <select class="input-text inline-input align-center" style="width: 190px;" data-answer="얻고자 하는 A의 생산량" data-feedback-id="u1-q2-den-fb">
+                                            <option value="">-- 선택 --</option>
+                                            <option value="포기하는 B의 생산량">포기하는 B의 생산량</option>
+                                            <option value="얻고자 하는 A의 생산량">얻고자 하는 A의 생산량</option>
+                                            <option value="재화 A 생산에 필요한 노동 시간">재화 A 생산에 필요한 노동 시간</option>
+                                            <option value="재화 B 생산에 필요한 노동 시간">재화 B 생산에 필요한 노동 시간</option>
+                                        </select>
+                                        <span class="teacher-answer" data-answer-target="u1-q2-den">얻고자 하는 A의 생산량</span>
+                                    </div>
+                                </span>
+                            </span>
+                            <span class="formula-unit">단위의 B</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="question-container" data-q-id="u1-q3">
+                <div class="question-header">
+                    <span class="q-num">Q3</span>
+                    <span class="q-title">[기회비용 계산] 위 공식을 적용하여 X국과 Y국의 재화 1단위당 기회비용을 도출하고 아래 표를 완성하시오. <small>(분수로 기입)</small></span>
+                </div>
+                <div class="question-body">
+                    <table class="input-table">
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>자동차 1대 생산의 기회비용</th>
+                                <th>스마트폰 1대 생산의 기회비용</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="nation-name">X국</td>
+                                <td>
+                                    <div class="input-wrapper inline-flex">
+                                        스마트폰 
+                                        <input type="text" class="input-text inline-input align-center" placeholder="" data-answer="2" data-feedback-id="u1-q3-x-car-fb"> 대
+                                        <span class="teacher-answer" data-answer-target="u1-q3-x-car">2</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input-wrapper inline-flex">
+                                        자동차 
+                                        <input type="text" class="input-text inline-input align-center" placeholder="" data-answer="1/2|0.5" data-feedback-id="u1-q3-x-phone-fb"> 대
+                                        <span class="teacher-answer" data-answer-target="u1-q3-x-phone">1/2 (또는 0.5)</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="nation-name">Y국</td>
+                                <td>
+                                    <div class="input-wrapper inline-flex">
+                                        스마트폰 
+                                        <input type="text" class="input-text inline-input align-center" placeholder="" data-answer="1" data-feedback-id="u1-q3-y-car-fb"> 대
+                                        <span class="teacher-answer" data-answer-target="u1-q3-y-car">1</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input-wrapper inline-flex">
+                                        자동차 
+                                        <input type="text" class="input-text inline-input align-center" placeholder="" data-answer="1" data-feedback-id="u1-q3-y-phone-fb"> 대
+                                        <span class="teacher-answer" data-answer-target="u1-q3-y-phone">1</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="question-container" data-q-id="u1-q4">
+                <div class="question-header">
+                    <span class="q-num">Q4</span>
+                    <span class="q-title">[비교우위 판정] 기회비용 비교를 근거로 각국의 비교우위 재화를 결정하시오.</span>
+                </div>
+                <div class="question-body">
+                    <div class="concept-check-box text-blue">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>
+                            비교우위 판정 원리: 특정 재화의 생산에 따르는 기회비용이 상대국보다 
+                            <span class="input-wrapper inline-flex">
+                                <input type="text" class="input-text inline-input short align-center" placeholder="낮은/높은" data-answer="낮은" data-feedback-id="u1-q4-concept-fb">
+                                <span class="teacher-answer" data-answer-target="u1-q4-concept">낮은</span>
+                            </span>
+                            국가가 해당 재화 생산의 비교우위를 점합니다.
+                        </span>
+                    </div>
+                    
+                    <div class="write-box mt-3">
+                        <div class="input-group-row">
+                            <span class="sub-label"><strong>자동차</strong> 생산 비교우위 국가:</span>
+                            <div class="input-wrapper">
+                                <input type="text" class="input-text short align-center" placeholder="국가명" data-answer="Y국" data-feedback-id="u1-q4-car-fb">
+                                <span class="teacher-answer" data-answer-target="u1-q4-car">Y국</span>
+                            </div>
+                            <span class="hint-text">(기회비용: Y국 스마트폰 <span class="highlight">1대</span> &lt; X국 스마트폰 <span class="highlight">2대</span>)</span>
+                        </div>
+                        <div class="input-group-row">
+                            <span class="sub-label"><strong>스마트폰</strong> 생산 비교우위 국가:</span>
+                            <div class="input-wrapper">
+                                <input type="text" class="input-text short align-center" placeholder="국가명" data-answer="X국" data-feedback-id="u1-q4-phone-fb">
+                                <span class="teacher-answer" data-answer-target="u1-q4-phone">X국</span>
+                            </div>
+                            <span class="hint-text">(기회비용: X국 자동차 <span class="highlight">0.5대</span> &lt; Y국 자동차 <span class="highlight">1대</span>)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="question-container" data-q-id="u1-q5">
+                <div class="question-header">
+                    <span class="q-num">Q5</span>
+                    <span class="q-title">[교역조건 범위] 양국 간 자발적 교역이 성립하여 무역 이익을 얻을 수 있는 교역조건의 범위를 각각 도출하시오.</span>
+                </div>
+                <div class="question-body">
+                    <div class="concept-check-box text-blue">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <span>
+                            교역조건 설정 원리: 양국이 자발적 교역에 참여하기 위해서는 교역조건(상대가격)이 <strong>양국의 국내 기회비용 사이에 위치</strong>해야 합니다.
+                        </span>
+                    </div>
+                    
+                    <div class="write-box mt-3">
+                        <span class="sub-label">① 자동차(Car) 1대당 스마트폰 교환조건 범위:</span>
+                        <div class="formula-inputs">
+                            <div class="input-wrapper inline-flex">
+                                스마트폰 
+                                <input type="text" class="input-text inline-input align-center" placeholder="하한값" data-answer="1" data-feedback-id="u1-q5-car-min-fb"> 대
+                                <span class="teacher-answer" data-answer-target="u1-q5-car-min">1</span>
+                            </div>
+                            <span class="inequality-symbol">&lt;</span>
+                            <span class="middle-item">자동차 1대</span>
+                            <span class="inequality-symbol">&lt;</span>
+                            <div class="input-wrapper inline-flex">
+                                스마트폰 
+                                <input type="text" class="input-text inline-input align-center" placeholder="상한값" data-answer="2" data-feedback-id="u1-q5-car-max-fb"> 대
+                                <span class="teacher-answer" data-answer-target="u1-q5-car-max">2</span>
+                            </div>
+                        </div>
+                        
+                        <span class="sub-label mt-3">② 스마트폰(Phone) 1대당 자동차 교환조건 범위:</span>
+                        <div class="formula-inputs">
+                            <div class="input-wrapper inline-flex">
+                                자동차 
+                                <input type="text" class="input-text inline-input align-center" placeholder="하한값" data-answer="1/2|0.5" data-feedback-id="u1-q5-phone-min-fb"> 대
+                                <span class="teacher-answer" data-answer-target="u1-q5-phone-min">1/2 (또는 0.5)</span>
+                            </div>
+                            <span class="inequality-symbol">&lt;</span>
+                            <span class="middle-item">스마트폰 1대</span>
+                            <span class="inequality-symbol">&lt;</span>
+                            <div class="input-wrapper inline-flex">
+                                자동차 
+                                <input type="text" class="input-text inline-input align-center" placeholder="상한값" data-answer="1" data-feedback-id="u1-q5-phone-max-fb"> 대
+                                <span class="teacher-answer" data-answer-target="u1-q5-phone-max">1</span>
+                            </div>
+                        </div>
+
+                        <div class="textarea-wrapper mt-3">
+                            <span class="sub-label d-block mb-1">교역 조건 도출의 근거 기술:</span>
+                            <textarea class="input-textarea" rows="3" placeholder="자동차 및 스마트폰 각각의 기회비용과 연계하여 양국이 무역 이익을 얻을 수 있는 이유를 기술하십시오." data-answer-keyword="기회비용|이득|이익|하한|상한" data-feedback-id="u1-q5-reason-fb"></textarea>
+                            <div class="teacher-answer block-type" data-answer-target="u1-q5-reason">
+                                양국이 자발적으로 교역하기 위해서는 수출국은 국내 기회비용보다 높은 대가를 받고, 수입국은 직접 생산하는 기회비용보다 낮은 대가를 지불해야 합니다. 따라서 자동차 교역비율은 양국의 자동차 기회비용 사이인 스마트폰 1대 초과 2대 미만이어야 하며, 스마트폰 교역비율 또한 양국의 스마트폰 기회비용 사이인 자동차 0.5대 초과 1대 미만 범위에서 형성되어야 합니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 유형 2 섹션 -->
+        <section class="worksheet-section page-break">
+            <div class="section-title">
+                <span class="section-number">분석 2</span>
+                <h2>생산비용 기준 모형 <small>(재화 1단위를 생산하는 데 필요한 노동 시간)</small></h2>
+            </div>
+
+            <div class="problem-box">
+                <p class="problem-statement">
+                    <strong>[설정]</strong> 다음 표는 A국과 B국이 '의류 1벌'과 '신발 1켤레'를 생산하는 데 각각 투입해야 하는 '노동 시간'을 나타냅니다. 다음 물음에 답하시오.
+                </p>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>국가</th>
+                            <th>의류 1벌 생산 시간</th>
+                            <th>신발 1켤레 생산 시간</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="nation-name">A국</td>
+                            <td><span class="number">4</span> 시간</td>
+                            <td><span class="number">8</span> 시간</td>
+                        </tr>
+                        <tr>
+                            <td class="nation-name">B국</td>
+                            <td><span class="number">6</span> 시간</td>
+                            <td><span class="number">3</span> 시간</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-tip warn"><i class="fa-solid fa-triangle-exclamation"></i> 생산비용(시간) 기준 모형에서는 투입되는 자원(노동력)의 양이 <strong>적을수록</strong> 생산성이 높으므로 절대우위를 가집니다.</div>
+            </div>
+
+            <!-- Q1 -->
+            <div class="question-container" data-q-id="u2-q1">
+                <div class="question-header">
+                    <span class="q-num">Q1</span>
+                    <span class="q-title">[절대우위 판정] 생산비용 기준 모형의 정의를 토대로 의류와 신발 생산의 절대우위 국가를 각각 식별하시오.</span>
+                </div>
+                <div class="question-body">
+                    <div class="concept-check-box text-blue">
+                        <i class="fa-solid fa-hourglass-half"></i>
+                        <span>
+                            단위당 생산에 소요되는 노동시간이 
+                            <span class="input-wrapper inline-flex">
+                                <input type="text" class="input-text inline-input short align-center" placeholder="작을수록/클수록" data-answer="작을수록" data-feedback-id="u2-q1-concept-fb">
+                                <span class="teacher-answer" data-answer-target="u2-q1-concept">작을수록</span>
+                            </span>
+                            절대우위를 가집니다.
+                        </span>
+                    </div>
+                    <div class="write-box mt-3">
+                        <div class="input-group-row">
+                            <span class="sub-label">의류 절대우위 국가:</span>
+                            <div class="input-wrapper">
+                                <input type="text" class="input-text short align-center" placeholder="국가명" data-answer="A국" data-feedback-id="u2-q1-clothes-fb">
+                                <span class="teacher-answer" data-answer-target="u2-q1-clothes">A국</span>
+                            </div>
+                            <span class="hint-text">(4시간 &lt; 6시간)</span>
+                        </div>
+                        <div class="input-group-row">
+                            <span class="sub-label">신발 절대우위 국가:</span>
+                            <div class="input-wrapper">
+                                <input type="text" class="input-text short align-center" placeholder="국가명" data-answer="B국" data-feedback-id="u2-q1-shoes-fb">
+                                <span class="teacher-answer" data-answer-target="u2-q1-shoes">B국</span>
+                            </div>
+                            <span class="hint-text">(3시간 &lt; 8시간)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="question-container" data-q-id="u2-q2">
+                <div class="question-header">
+                    <span class="q-num">Q2</span>
+                    <span class="q-title">[기회비용 공식 완성] 생산비용(노동시간) 기준 모형에서 특정 재화의 기회비용을 도출하는 다음 공식의 빈칸을 완성하시오.</span>
+                </div>
+                <div class="question-body">
+                    <div class="formula-box">
+                        <div class="formula">
+                            <span class="formula-left">재화 A 1단위 생산의 기회비용</span>
+                            <span class="formula-equal">=</span>
+                            <span class="fraction">
+                                <span class="numerator">
+                                    <div class="input-wrapper">
+                                        <select class="input-text inline-input align-center" style="width: 210px;" data-answer="얻고자 하는 A의 생산 시간(비용)" data-feedback-id="u2-q2-num-fb">
+                                            <option value="">-- 선택 --</option>
+                                            <option value="얻고자 하는 A의 생산 시간(비용)">얻고자 하는 A의 생산 시간(비용)</option>
+                                            <option value="포기하는 B의 생산 시간(비용)">포기하는 B의 생산 시간(비용)</option>
+                                            <option value="얻고자 하는 A의 최대 생산량">얻고자 하는 A의 최대 생산량</option>
+                                            <option value="포기하는 B의 최대 생산량">포기하는 B의 최대 생산량</option>
+                                        </select>
+                                        <span class="teacher-answer" data-answer-target="u2-q2-num">얻고자 하는 A의 생산 시간(비용)</span>
+                                    </div>
+                                </span>
+                                <span class="denominator">
+                                    <div class="input-wrapper">
+                                        <select class="input-text inline-input align-center" style="width: 210px;" data-answer="포기하는 B의 생산 시간(비용)" data-feedback-id="u2-q2-den-fb">
+                                            <option value="">-- 선택 --</option>
+                                            <option value="얻고자 하는 A의 생산 시간(비용)">얻고자 하는 A의 생산 시간(비용)</option>
+                                            <option value="포기하는 B의 생산 시간(비용)">포기하는 B의 생산 시간(비용)</option>
+                                            <option value="얻고자 하는 A의 최대 생산량">얻고자 하는 A의 최대 생산량</option>
+                                            <option value="포기하는 B의 최대 생산량">포기하는 B의 최대 생산량</option>
+                                        </select>
+                                        <span class="teacher-answer" data-answer-target="u2-q2-den">포기하는 B의 생산 시간(비용)</span>
+                                    </div>
+                                </span>
+                            </span>
+                            <span class="formula-unit">단위의 B</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="question-container" data-q-id="u2-q3">
+                <div class="question-header">
+                    <span class="q-num">Q3</span>
+                    <span class="q-title">[기회비용 계산] 위 계산 공식을 기초로 A국과 B국의 재화별 기회비용을 도출하여 아래 표를 완성하시오. <small>(분수로 기입)</small></span>
+                </div>
+                <div class="question-body">
+                    <table class="input-table">
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>의류 1벌 생산의 기회비용</th>
+                                <th>신발 1켤레 생산의 기회비용</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="nation-name">A국</td>
+                                <td>
+                                    <div class="input-wrapper inline-flex">
+                                        신발 
+                                        <input type="text" class="input-text inline-input align-center" placeholder="" data-answer="1/2|0.5" data-feedback-id="u2-q3-a-clothes-fb"> 켤레
+                                        <span class="teacher-answer" data-answer-target="u2-q3-a-clothes">1/2 (또는 0.5)</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input-wrapper inline-flex">
+                                        의류 
+                                        <input type="text" class="input-text inline-input align-center" placeholder="" data-answer="2" data-feedback-id="u2-q3-a-shoes-fb"> 벌
+                                        <span class="teacher-answer" data-answer-target="u2-q3-a-shoes">2</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="nation-name">B국</td>
+                                <td>
+                                    <div class="input-wrapper inline-flex">
+                                        신발 
+                                        <input type="text" class="input-text inline-input align-center" placeholder="" data-answer="2" data-feedback-id="u2-q3-b-clothes-fb"> 켤레
+                                        <span class="teacher-answer" data-answer-target="u2-q3-b-clothes">2</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input-wrapper inline-flex">
+                                        의류 
+                                        <input type="text" class="input-text inline-input align-center" placeholder="" data-answer="1/2|0.5" data-feedback-id="u2-q3-b-shoes-fb"> 벌
+                                        <span class="teacher-answer" data-answer-target="u2-q3-b-shoes">1/2 (또는 0.5)</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="question-container" data-q-id="u2-q4">
+                <div class="question-header">
+                    <span class="q-num">Q4</span>
+                    <span class="q-title">[비교우위 및 특화] 양국의 기회비용 비교를 토대로 각국이 특화(Specialization)해야 하는 재화를 결정하시오.</span>
+                </div>
+                <div class="question-body">
+                    <div class="write-box">
+                        <div class="input-group-row">
+                            <span class="sub-label">A국 비교우위(특화) 재화:</span>
+                            <div class="input-wrapper">
+                                <input type="text" class="input-text short align-center" placeholder="재화명" data-answer="의류" data-feedback-id="u2-q4-a-fb">
+                                <span class="teacher-answer" data-answer-target="u2-q4-a">의류</span>
+                            </div>
+                            <span class="hint-text">(기회비용: 신발 <span class="highlight">0.5켤레</span> &lt; B국 신발 <span class="highlight">2켤레</span>)</span>
+                        </div>
+                        <div class="input-group-row">
+                            <span class="sub-label">B국 비교우위(특화) 재화:</span>
+                            <div class="input-wrapper">
+                                <input type="text" class="input-text short align-center" placeholder="재화명" data-answer="신발" data-feedback-id="u2-q4-b-fb">
+                                <span class="teacher-answer" data-answer-target="u2-q4-b">신발</span>
+                            </div>
+                            <span class="hint-text">(기회비용: 의류 <span class="highlight">0.5벌</span> &lt; A국 의류 <span class="highlight">2벌</span>)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 유형 3 섹션 (생산가능곡선 작도와 비교우위) -->
+        <section class="worksheet-section page-break">
+            <div class="section-title">
+                <span class="section-number">분석 3</span>
+                <h2>생산가능곡선(PPF)의 작도와 비교우위 <small>(인터랙티브 작도를 통한 그래프 기하학적 분석)</small></h2>
+            </div>
+
+            <div class="problem-box">
+                <p class="problem-statement">
+                    <strong>[설정]</strong> 다음은 갑국과 을국이 하루 동안 보유하고 있는 모든 노동력(생산요소)을 투입하여 생산할 수 있는 재화인 '옷'과 '쌀'에 대한 생산 시나리오입니다. 아래 물음에 답하시오.
+                </p>
+                <div class="scenario-card" style="background-color: #f8fafc; border-left: 4px solid var(--primary); padding: 15px; border-radius: 4px; margin-bottom: 15px;">
+                    <ul style="padding-left: 20px; font-size: 0.95rem; color: var(--text-main);">
+                        <li style="margin-bottom: 8px;"><strong>갑국:</strong> 하루 동안 모든 노동력을 투입하여 <strong>쌀은 최대 40가마</strong> 또는 <strong>옷은 최대 20벌</strong>을 생산할 수 있습니다.</li>
+                        <li><strong>을국:</strong> 하루 동안 모든 노동력을 투입하여 <strong>쌀은 최대 30가마</strong> 또는 <strong>옷은 최대 30벌</strong>을 생산할 수 있습니다.</li>
+                    </ul>
+                </div>
+                <div class="table-tip"><i class="fa-solid fa-circle-info"></i> 생산가능곡선(PPF)은 한 나라가 가진 모든 생산요소를 가장 효율적으로 사용하여 생산할 수 있는 두 재화의 최대 조합을 나타내는 곡선(선)입니다. 가로축(X축)을 쌀, 세로축(Y축)을 옷으로 설정하여 그려봅시다.</div>
+            </div>
+
+            <!-- 그래프 작도 구역 -->
+            <div class="ppf-layout">
+                <div class="ppf-chart-container">
+                    <div class="chart-label y-axis-title">옷 (벌)</div>
+                    <div class="chart-label x-axis-title">쌀 (가마)</div>
+                    <!-- SVG 격자 및 그래프 작도 영역 -->
+                    <svg viewBox="0 0 450 450" class="ppf-svg" id="ppf-svg">
+                        <!-- 정의: 그리드 패턴 및 축 화살표 마커 -->
+                        <defs>
+                            <!-- 화살표 마커 -->
+                            <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569" />
+                            </marker>
+                        </defs>
+
+                        <!-- 보조선 격자 (36px 간격 = 5단위) -->
+                        <g stroke="#f8fafc" stroke-width="0.5">
+                            <line x1="76" y1="40" x2="76" y2="400" />
+                            <line x1="148" y1="40" x2="148" y2="400" />
+                            <line x1="220" y1="40" x2="220" y2="400" />
+                            <line x1="292" y1="40" x2="292" y2="400" />
+                            <line x1="364" y1="40" x2="364" y2="400" />
+
+                            <line x1="40" y1="364" x2="400" y2="364" />
+                            <line x1="40" y1="292" x2="400" y2="292" />
+                            <line x1="40" y1="220" x2="400" y2="220" />
+                            <line x1="40" y1="148" x2="400" y2="148" />
+                            <line x1="40" y1="76" x2="400" y2="76" />
+                        </g>
+                        <!-- 주 격자선 (72px 간격 = 10단위) -->
+                        <g stroke="#e2e8f0" stroke-width="1">
+                            <!-- 세로선들 (쌀: 10, 20, 30, 40, 50) -->
+                            <line x1="112" y1="40" x2="112" y2="400" />
+                            <line x1="184" y1="40" x2="184" y2="400" />
+                            <line x1="256" y1="40" x2="256" y2="400" />
+                            <line x1="328" y1="40" x2="328" y2="400" />
+                            <line x1="400" y1="40" x2="400" y2="400" />
+                            
+                            <!-- 가로선들 (옷: 10, 20, 30, 40, 50) -->
+                            <line x1="40" y1="328" x2="400" y2="328" />
+                            <line x1="40" y1="256" x2="400" y2="256" />
+                            <line x1="40" y1="184" x2="400" y2="184" />
+                            <line x1="40" y1="112" x2="400" y2="112" />
+                            <line x1="40" y1="40" x2="400" y2="40" />
+                        </g>
+
+                        <!-- 축 그리기 -->
+                        <g stroke="#475569" stroke-width="2" marker-end="url(#arrow)">
+                            <!-- Y축 (세로) -->
+                            <line x1="40" y1="400" x2="40" y2="20" />
+                            <!-- X축 (가로) -->
+                            <line x1="40" y1="400" x2="420" y2="400" />
+                        </g>
+
+                        <!-- 축 레이블 텍스트 (숫자 눈금) -->
+                        <g font-family="var(--font-fancy)" font-size="11" fill="#64748b" text-anchor="middle">
+                            <!-- 원점 -->
+                            <text x="28" y="412">0</text>
+                            
+                            <!-- X축 눈금 (쌀) -->
+                            <text x="112" y="418">10</text>
+                            <text x="184" y="418">20</text>
+                            <text x="256" y="418">30</text>
+                            <text x="328" y="418">40</text>
+                            <text x="400" y="418">50</text>
+                            
+                            <!-- Y축 눈금 (옷) -->
+                            <text x="25" y="332" text-anchor="end">10</text>
+                            <text x="25" y="260" text-anchor="end">20</text>
+                            <text x="25" y="188" text-anchor="end">30</text>
+                            <text x="25" y="116" text-anchor="end">40</text>
+                            <text x="25" y="44" text-anchor="end">50</text>
+                        </g>
+
+                        <!-- 교사용 모범답안 선 (교사용 모드일 때만 노출되도록 제어) -->
+                        <g class="teacher-answer-lines" stroke-width="3">
+                            <!-- 갑국: 쌀 40 (x=328), 옷 20 (y=256) -->
+                            <line x1="40" y1="256" x2="328" y2="400" stroke="#f97316" stroke-width="3" stroke-dasharray="4 2" />
+                            <!-- 을국: 쌀 30 (x=256), 옷 30 (y=184) -->
+                            <line x1="40" y1="184" x2="256" y2="400" stroke="#0ea5e9" stroke-width="3" stroke-dasharray="4 2" />
+                        </g>
+
+                        <!-- 학생이 드래그하여 작도하는 실시간 선 -->
+                        <!-- 갑국 선 (주황) -->
+                        <line id="line-country-a" x1="40" y1="400" x2="40" y2="400" stroke="#f97316" stroke-width="3.5" class="student-drawn-line" />
+                        <!-- 을국 선 (파랑) -->
+                        <line id="line-country-b" x1="40" y1="400" x2="40" y2="400" stroke="#0ea5e9" stroke-width="3.5" class="student-drawn-line" />
+
+                        <!-- 드래그 핸들 (조작 단추) - Y축 절편, X축 절편 -->
+                        <!-- 갑국 핸들 (주황) -->
+                        <circle id="handle-a-y" cx="40" cy="400" r="10" fill="#f97316" stroke="#fff" stroke-width="2" class="drag-handle" style="cursor: ns-resize;" />
+                        <circle id="handle-a-x" cx="40" cy="400" r="10" fill="#f97316" stroke="#fff" stroke-width="2" class="drag-handle" style="cursor: ew-resize;" />
+                        
+                        <!-- 을국 핸들 (파랑) -->
+                        <circle id="handle-b-y" cx="40" cy="400" r="10" fill="#0ea5e9" stroke="#fff" stroke-width="2" class="drag-handle" style="cursor: ns-resize;" />
+                        <circle id="handle-b-x" cx="40" cy="400" r="10" fill="#0ea5e9" stroke="#fff" stroke-width="2" class="drag-handle" style="cursor: ew-resize;" />
+                    </svg>
+                </div>
+
+                <!-- 그래프 컨트롤 및 입력 확인 영역 -->
+                <div class="ppf-controls no-print">
+                    <div class="control-card country-a-card">
+                        <h4 class="card-title"><span class="color-dot a-dot" style="background-color:#f97316;"></span>갑국 생산가능선 설정</h4>
+                        <p class="card-instruction">주황색 동그라미 핸들을 드래그하거나 아래 값을 입력하세요. (5단위 스냅)</p>
+                        <div class="input-row-flex">
+                            <label for="input-a-y">최대 옷 생산량 (Y축 절편):</label>
+                            <div class="input-wrapper inline-flex">
+                                <input type="number" id="input-a-y" class="input-text short align-center font-bold" min="0" max="50" step="5" value="0"> 벌
+                            </div>
+                        </div>
+                        <div class="input-row-flex">
+                            <label for="input-a-x">최대 쌀 생산량 (X축 절편):</label>
+                            <div class="input-wrapper inline-flex">
+                                <input type="number" id="input-a-x" class="input-text short align-center font-bold" min="0" max="50" step="5" value="0"> 가마
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="control-card country-b-card">
+                        <h4 class="card-title"><span class="color-dot b-dot" style="background-color:#0ea5e9;"></span>을국 생산가능선 설정</h4>
+                        <p class="card-instruction">파란색 동그라미 핸들을 드래그하거나 아래 값을 입력하세요. (5단위 스냅)</p>
+                        <div class="input-row-flex">
+                            <label for="input-b-y">최대 옷 생산량 (Y축 절편):</label>
+                            <div class="input-wrapper inline-flex">
+                                <input type="number" id="input-b-y" class="input-text short align-center font-bold" min="0" max="50" step="5" value="0"> 벌
+                            </div>
+                        </div>
+                        <div class="input-row-flex">
+                            <label for="input-b-x">최대 쌀 생산량 (X축 절편):</label>
+                            <div class="input-wrapper inline-flex">
+                                <input type="number" id="input-b-x" class="input-text short align-center font-bold" min="0" max="50" step="5" value="0"> 가마
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q1 -->
+            <div class="question-container" data-q-id="u3-q1">
+                <div class="question-header">
+                    <span class="q-num">Q1</span>
+                    <span class="q-title">[생산가능곡선 확인 및 표 작성] 위 설정값을 토대로 그린 생산가능곡선의 절편값을 바탕으로 아래 최대 생산량 표를 완성하시오.</span>
+                </div>
+                <div class="question-body">
+                    <table class="input-table">
+                        <thead>
+                            <tr>
+                                <th>국가</th>
+                                <th>옷 최대 생산량 (Y축 절편)</th>
+                                <th>쌀 최대 생산량 (X축 절편)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="nation-name">갑국</td>
+                                <td>
+                                    <div class="input-wrapper inline-flex">
+                                        <input type="text" class="input-text short align-center" placeholder="값 입력" data-answer="20" data-feedback-id="u3-q1-a-y-fb"> 벌
+                                        <span class="teacher-answer" data-answer-target="u3-q1-a-y">20</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input-wrapper inline-flex">
+                                        <input type="text" class="input-text short align-center" placeholder="값 입력" data-answer="40" data-feedback-id="u3-q1-a-x-fb"> 가마
+                                        <span class="teacher-answer" data-answer-target="u3-q1-a-x">40</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="nation-name">을국</td>
+                                <td>
+                                    <div class="input-wrapper inline-flex">
+                                        <input type="text" class="input-text short align-center" placeholder="값 입력" data-answer="30" data-feedback-id="u3-q1-b-y-fb"> 벌
+                                        <span class="teacher-answer" data-answer-target="u3-q1-b-y">30</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input-wrapper inline-flex">
+                                        <input type="text" class="input-text short align-center" placeholder="값 입력" data-answer="30" data-feedback-id="u3-q1-b-x-fb"> 가마
+                                        <span class="teacher-answer" data-answer-target="u3-q1-b-x">30</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="question-container" data-q-id="u3-q2">
+                <div class="question-header">
+                    <span class="q-num">Q2</span>
+                    <span class="q-title">[기회비용 계산] 생산가능곡선의 기하학적 성질(기울기)을 이용하여 아래 질문의 기회비용을 도출하시오. <small>(분수 혹은 소수로 기입)</small></span>
+                </div>
+                <div class="question-body">
+                    <div class="concept-check-box text-blue">
+                        <i class="fa-solid fa-shapes"></i>
+                        <span>
+                            생산가능곡선과 기회비용: 두 재화의 생산가능곡선이 직선일 때, <strong>세로축(Y축, 옷) 재화 1단위 생산의 기회비용은 생산가능곡선 기울기의 절댓값</strong>과 같고, <strong>가로축(X축, 쌀) 재화 1단위 생산의 기회비용은 기울기 역수의 절댓값</strong>과 같습니다.
+                        </span>
+                    </div>
+
+                    <div class="write-box mt-3">
+                        <div class="input-group-row">
+                            <span class="sub-label">① <strong>갑국</strong>의 <strong>옷 1벌</strong> 생산의 기회비용(기울기 절댓값):</span>
+                            <div class="input-wrapper inline-flex">
+                                쌀 
+                                <input type="text" class="input-text inline-input align-center" placeholder="값" data-answer="2" data-feedback-id="u3-q2-a-y-fb"> 가마
+                                <span class="teacher-answer" data-answer-target="u3-q2-a-y">2</span>
+                            </div>
+                        </div>
+                        <div class="input-group-row">
+                            <span class="sub-label">② <strong>을국</strong>의 <strong>옷 1벌</strong> 생산의 기회비용(기울기 절댓값):</span>
+                            <div class="input-wrapper inline-flex">
+                                쌀 
+                                <input type="text" class="input-text inline-input align-center" placeholder="값" data-answer="1" data-feedback-id="u3-q2-b-y-fb"> 가마
+                                <span class="teacher-answer" data-answer-target="u3-q2-b-y">1</span>
+                            </div>
+                        </div>
+                        <div class="input-group-row mt-2">
+                            <span class="sub-label">③ <strong>갑국</strong>의 <strong>쌀 1가마</strong> 생산의 기회비용(기울기 역수 절댓값):</span>
+                            <div class="input-wrapper inline-flex">
+                                옷 
+                                <input type="text" class="input-text inline-input align-center" placeholder="값" data-answer="1/2|0.5" data-feedback-id="u3-q2-a-x-fb"> 벌
+                                <span class="teacher-answer" data-answer-target="u3-q2-a-x">1/2 (또는 0.5)</span>
+                            </div>
+                        </div>
+                        <div class="input-group-row">
+                            <span class="sub-label">④ <strong>을국</strong>의 <strong>쌀 1가마</strong> 생산의 기회비용(기울기 역수 절댓값):</span>
+                            <div class="input-wrapper inline-flex">
+                                옷 
+                                <input type="text" class="input-text inline-input align-center" placeholder="값" data-answer="1" data-feedback-id="u3-q2-b-x-fb"> 벌
+                                <span class="teacher-answer" data-answer-target="u3-q2-b-x">1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="question-container" data-q-id="u3-q3">
+                <div class="question-header">
+                    <span class="q-num">Q3</span>
+                    <span class="q-title">[비교우위 판정] 두 국가의 기회비용을 비교하여 각 재화의 비교우위 국가를 결정하고 판정 근거를 기하학적 관점에서 서술하시오.</span>
+                </div>
+                <div class="question-body">
+                    <div class="write-box">
+                        <div class="input-group-row">
+                            <span class="sub-label"><strong>쌀</strong> 생산의 비교우위 국가:</span>
+                            <div class="input-wrapper">
+                                <input type="text" class="input-text short align-center" placeholder="국가명" data-answer="갑국" data-feedback-id="u3-q3-rice-fb">
+                                <span class="teacher-answer" data-answer-target="u3-q3-rice">갑국</span>
+                            </div>
+                            <span class="hint-text">(기회비용: 갑국 옷 <span class="highlight">0.5벌</span> &lt; 을국 옷 <span class="highlight">1벌</span>)</span>
+                        </div>
+                        <div class="input-group-row">
+                            <span class="sub-label"><strong>옷</strong> 생산의 비교우위 국가:</span>
+                            <div class="input-wrapper">
+                                <input type="text" class="input-text short align-center" placeholder="국가명" data-answer="을국" data-feedback-id="u3-q3-cloth-fb">
+                                <span class="teacher-answer" data-answer-target="u3-q3-cloth">을국</span>
+                            </div>
+                            <span class="hint-text">(기회비용: 을국 쌀 <span class="highlight">1가마</span> &lt; 갑국 쌀 <span class="highlight">2가마</span>)</span>
+                        </div>
+                        <div class="textarea-wrapper mt-3">
+                            <span class="sub-label d-block mb-1">그래프의 형태(기울기 등)를 포함하여 비교우위 판정 근거 기술:</span>
+                            <textarea class="input-textarea" rows="3" placeholder="생산가능곡선의 기울기 완만함/가파름 정도를 기회비용과 결부하여 설명하십시오." data-answer-keyword="기울기|완만|가파|기회비용" data-feedback-id="u3-q3-reason-fb"></textarea>
+                            <div class="teacher-answer block-type" data-answer-target="u3-q3-reason">
+                                생산가능곡선의 기울기는 Y축 재화(옷) 단위당 X축 재화(쌀)의 기회비용을 나타냅니다. 갑국의 생산가능곡선은 을국에 비해 가로축(쌀) 방향으로 더 완만한 형태를 띠므로, 쌀 1가마를 더 생산할 때 포기해야 하는 옷의 양(기회비용)이 을국보다 작아 쌀 생산에 비교우위를 가집니다. 반대로 을국의 생산가능곡선은 갑국에 비해 Y축 방향으로 더 완만(X축 대비 가파름)하므로 옷 생산의 기회비용이 더 낮아 옷 생산에 비교우위를 가집니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 실전 연습문제 섹션 -->
+        <section class="worksheet-section page-break">
+            <div class="section-title">
+                <span class="section-number">실전 연습</span>
+                <h2>실전 연습문제 <small>(수능/학평 유형 분석)</small></h2>
+            </div>
+
+            <!-- 연습문제 1 (기출) -->
+            <div class="question-container" data-q-id="ex-q1">
+                <div class="question-header">
+                    <span class="q-num">E1</span>
+                    <span class="q-title">다음 자료를 분석하여 올바른 답을 고르시오.</span>
+                </div>
+                <div class="question-body">
+                    <div class="exam-box">
+                        <div class="box-title">자료</div>
+                        <p style="margin: 0 0 15px 0; font-size: 0.95rem; line-height: 1.6; color: var(--text-main);">
+                            갑국과 을국은 각각 X재와 Y재만을 직선인 생산가능곡선상에서 생산하며, 생산된 재화는 전량 소비된다. 양국은 비교우위를 가지는 재화만을 특화 생산하여 양국 모두 이익이 발생하는 교환 비율에 따라 양국 간에만 거래 비용 없이 교역하고자 한다. 표는 양국의 각 재화 1개 생산에 필요한 노동자 수를 나타낸다. 단, 양국의 생산요소는 동일한 양의 노동뿐이다.
+                        </p>
+                        <table class="data-table" style="max-width: 400px; margin: 0 auto 10px auto;">
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>갑국</th>
+                                    <th>을국</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="nation-name">X재</td>
+                                    <td><span class="number">100</span> 명</td>
+                                    <td><span class="number">90</span> 명</td>
+                                </tr>
+                                <tr>
+                                    <td class="nation-name">Y재</td>
+                                    <td><span class="number">150</span> 명</td>
+                                    <td><span class="number">180</span> 명</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style="text-align: right; font-size: 0.85rem; color: var(--text-muted);">(단위: 명)</div>
+                    </div>
+
+                    <div class="choices-list">
+                        <div class="choice-item"><span class="choice-num">①</span> X재 최대 생산 가능량은 갑국이 을국보다 많다.</div>
+                        <div class="choice-item"><span class="choice-num">②</span> Y재 1개 생산의 기회비용은 을국이 갑국보다 크다.</div>
+                        <div class="choice-item"><span class="choice-num">③</span> 갑국은 X재 생산에 절대 우위와 비교 우위를 모두 가진다.</div>
+                        <div class="choice-item"><span class="choice-num">④</span> X재 1개당 Y재 1/2개가 교환되는 조건이면, 을국은 교역에 참여한다.</div>
+                        <div class="choice-item"><span class="choice-num">⑤</span> 교역 후 갑국의 Y재 1개 소비의 기회비용은 교역 전에 비해 감소한다.</div>
+                    </div>
+
+                    <div class="answer-selection">
+                        <span style="font-weight: 700; color: var(--text-main); font-size: 0.95rem;">정답 선택:</span>
+                        <div class="input-wrapper inline-flex">
+                            <select class="input-text inline-input align-center" style="width: 140px;" data-answer="2" data-feedback-id="ex-q1-fb">
+                                <option value="">-- 정답 선택 --</option>
+                                <option value="1">①</option>
+                                <option value="2">②</option>
+                                <option value="3">③</option>
+                                <option value="4">④</option>
+                                <option value="5">⑤</option>
+                            </select>
+                            <span class="teacher-answer" data-answer-target="ex-q1">②</span>
+                        </div>
+                    </div>
+
+                    <div class="teacher-answer block-type" style="margin-top: 15px;">
+                        <strong>[해설]</strong> Y재 1개 생산의 기회비용은 갑국이 X재 1.5개(150명/100명), 을국이 X재 2개(180명/90명)이므로 을국(2개)이 갑국(1.5개)보다 큽니다.<br>
+                        <strong>[오답 피하기]</strong><br>
+                        ① X재 1개 생산에 필요한 노동자가 갑국은 100명, 을국은 90명이므로 최대 생산 가능량은 을국이 더 많습니다.<br>
+                        ③ X재 생산 비용(노동자 수)은 을국이 더 적기 때문에 X재 절대우위는 을국이 가집니다. Y재 생산 비용은 갑국이 더 적기 때문에 절대우위와 비교우위는 모두 갑국이 Y재에 대해 가집니다.<br>
+                        ④ 을국의 X재 기회비용은 Y재 1/2개이므로 무역 이득이 없어 교역에 참여하지 않습니다.<br>
+                        ⑤ 갑국은 Y재에 비교우위가 있어 수출하므로, 교역 후 Y재 소비의 기회비용은 교역 전보다 증가합니다.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 연습문제 2 (유사 변형) -->
+            <div class="question-container" data-q-id="ex-q2">
+                <div class="question-header">
+                    <span class="q-num">E2</span>
+                    <span class="q-title">다음 자료를 분석하여 올바른 답을 고르시오.</span>
+                </div>
+                <div class="question-body">
+                    <div class="exam-box">
+                        <div class="box-title">자료</div>
+                        <p style="margin: 0 0 15px 0; font-size: 0.95rem; line-height: 1.6; color: var(--text-main);">
+                            갑국과 을국은 각각 X재와 Y재만을 직선인 생산가능곡선상에서 생산하며, 생산된 재화는 전량 소비된다. 양국은 비교우위를 가지는 재화만을 특화 생산하여 양국 모두 이익이 발생하는 교환 비율에 따라 양국 간에만 거래 비용 없이 교역하고자 한다. 표는 양국의 각 재화 1단위 생산에 필요한 노동자 수를 나타낸다. 단, 양국의 생산요소는 동일한 양의 노동뿐이다.
+                        </p>
+                        <table class="data-table" style="max-width: 400px; margin: 0 auto 10px auto;">
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>갑국</th>
+                                    <th>을국</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="nation-name">X재</td>
+                                    <td><span class="number">10</span> 명</td>
+                                    <td><span class="number">15</span> 명</td>
+                                </tr>
+                                <tr>
+                                    <td class="nation-name">Y재</td>
+                                    <td><span class="number">20</span> 명</td>
+                                    <td><span class="number">45</span> 명</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style="text-align: right; font-size: 0.85rem; color: var(--text-muted);">(단위: 명)</div>
+                    </div>
+
+                    <div class="choices-list">
+                        <div class="choice-item"><span class="choice-num">①</span> 두 재화 생산에 모두 절대우위를 가지는 국가는 을국이다.</div>
+                        <div class="choice-item"><span class="choice-num">②</span> X재 1단위 생산의 기회비용은 갑국이 을국보다 크다.</div>
+                        <div class="choice-item"><span class="choice-num">③</span> 을국은 Y재 생산에 비교우위를 가진다.</div>
+                        <div class="choice-item"><span class="choice-num">④</span> X재 1단위당 Y재 0.4단위가 교환되는 조건이면, 두 국가 모두 교역에 참여하지 않는다.</div>
+                        <div class="choice-item"><span class="choice-num">⑤</span> 교역 후 을국의 X재 1단위 소비의 기회비용은 교역 전에 비해 감소한다.</div>
+                    </div>
+
+                    <div class="answer-selection">
+                        <span style="font-weight: 700; color: var(--text-main); font-size: 0.95rem;">정답 선택:</span>
+                        <div class="input-wrapper inline-flex">
+                            <select class="input-text inline-input align-center" style="width: 140px;" data-answer="2" data-feedback-id="ex-q2-fb">
+                                <option value="">-- 정답 선택 --</option>
+                                <option value="1">①</option>
+                                <option value="2">②</option>
+                                <option value="3">③</option>
+                                <option value="4">④</option>
+                                <option value="5">⑤</option>
+                            </select>
+                            <span class="teacher-answer" data-answer-target="ex-q2">②</span>
+                        </div>
+                    </div>
+
+                    <div class="teacher-answer block-type" style="margin-top: 15px;">
+                        <strong>[해설]</strong> X재 1단위 생산의 기회비용은 갑국이 Y재 1/2단위(10명/20명 = 0.5단위), 을국이 Y재 1/3단위(15명/45명 ≈ 0.33단위)이므로 갑국이 을국보다 큽니다.<br>
+                        <strong>[오답 피하기]</strong><br>
+                        ① X재, Y재 모두 생산 소요 노동자가 갑국이 더 적으므로(10 < 15, 20 < 45) 절대우위는 모두 갑국이 가집니다.<br>
+                        ③ Y재 1단위 생산 기회비용은 갑국이 X재 2단위(20/10), 을국이 X재 3단위(45/15)이므로 갑국이 Y재에 비교우위를 가지며, 을국은 X재에 비교우위를 가집니다.<br>
+                        ④ 교환비율 0.4단위는 양국의 X재 기회비용 범위(0.33 ~ 0.5단위) 사이이므로 양국 모두 교역에 참여합니다.<br>
+                        ⑤ 을국은 비교우위인 X재를 특화하여 수출하므로, 교역 후 X재 소비의 기회비용은 교역 전에 비해 증가합니다.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 정답 모드 토글 스위치 (맨 밑 배치) -->
+        <div class="mode-switch-bottom-container text-center mt-5 mb-4 no-print">
+            <div class="mode-switch-card">
+                <span class="mode-switch-title"><i class="fa-solid fa-graduation-cap"></i> 학습 모드 설정</span>
+                <div class="mode-switch-container">
+                    <span class="mode-label active" id="label-student">학생용 모드</span>
+                    <button class="mode-toggle" id="mode-toggle-btn" aria-label="모드 전환">
+                        <span class="toggle-circle"></span>
+                    </button>
+                    <span class="mode-label" id="label-teacher">정답 모드</span>
+                </div>
+                <p class="mode-switch-desc">스위치를 '정답 모드'로 전환하면 전체 모범 답안과 해설지를 확인할 수 있습니다.</p>
+            </div>
+        </div>
+
+        <!-- 채점 결과 플로팅 바 (학생 모드용) -->
+        <div class="score-bar no-print" id="score-bar">
+            <div class="score-container">
+                <div class="score-info" id="score-info" style="display: none; align-items: center; gap: 8px;">
+                    <span class="score-title"><i class="fa-solid fa-list-check"></i> 채점 결과:</span>
+                    <span class="score-value" id="current-score">0 / 35</span>
+                    <span class="percentage" id="score-percentage">(0%)</span>
+                </div>
+                <button class="btn btn-success" id="grade-btn" style="padding: 10px 24px; border-radius: 30px; font-weight: 700; box-shadow: var(--shadow-sm); transition: var(--transition);">
+                    <i class="fa-solid fa-paper-plane"></i> 활동지 제출 및 채점하기
+                </button>
+            </div>
+        </div>
+
+        <!-- 모범 답안 및 정답 해설 -->
+        <section class="worksheet-section teacher-guide-section page-break" id="teacher-guide">
+            <div class="section-title">
+                <span class="section-number">정답 및 해설</span>
+                <h2>모범 답안 및 정답 해설 <small>(Official Solutions & Guide)</small></h2>
+            </div>
+            
+            <div class="error-prevention-card">
+                <h3><i class="fa-solid fa-circle-exclamation"></i> [개념 정리 및 오개념 방지] 자주 발생하는 주요 개념적 혼동 요인 분석</h3>
+                <p>
+                    기회비용 산출 시 재화의 성격(산출량 기준 vs 노동시간 기준)을 명확하게 구분하지 못하고, 상대 상품의 수치를 기계적으로 대입하는 오류를 범하기 쉽습니다. 실수하지 않도록 다음의 이론적 차이를 명확히 확인하고 머릿속에 정리해 봅시다.
+                </p>
+                <div class="comparison-grid">
+                    <div class="comp-card">
+                        <h4>생산량 기준 모형 (Output-based)</h4>
+                        <div class="card-formula">A 기회비용 = B 생산 가능 수량 / A 생산 가능 수량</div>
+                        <p class="card-desc">
+                            동일한 생산 요소(노동)가 제약인 조건 하에서, 재화 A를 한 단위 늘리는 것은 해당 요소를 재화 B 생산에서 회수하는 것을 의미합니다. 
+                            따라서 포기해야 하는 B의 잠재 산출량이 기회비용이 되므로, <strong>'포기하는 상대 재화의 양'</strong>을 <strong>'얻고자 하는 자국 재화의 양'</strong>으로 나눕니다.
+                        </p>
+                    </div>
+                    <div class="comp-card warn">
+                        <h4>생산비용(노동시간) 기준 모형 (Input-based)</h4>
+                        <div class="card-formula">A 기회비용 = A 단위당 생산시간 / B 단위당 생산시간</div>
+                        <p class="card-desc">
+                            재화 1단위를 만들기 위한 투입 시간(기술 계수)이 기준인 경우, A를 1단위 생산하는 것은 A의 생산 소요 시간만큼 B 생산에서 시간이 회수됨을 의미합니다. 
+                            즉, <strong>'자국 재화 A 생산에 투입한 시간'</strong> 동안 포기하게 되는 B의 물리적 생산 가능량을 구해야 하므로 A의 투입 비용(시간)이 분자가 됩니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detailed-solutions mt-4">
+                <h3><i class="fa-solid fa-compass"></i> 단계별 상세 수리 분석</h3>
+                
+                <div class="solution-item">
+                    <h4>[분석 1] 생산량 기준 상세 해설</h4>
+                    <ul>
+                        <li>
+                            <strong>Q1. 절대우위:</strong> 동일 생산요소 대비 최대 산출량을 비교할 때, 자동차는 Y국(15대 &gt; 10대)이, 스마트폰은 X국(20대 &gt; 15대)이 우위를 가지므로 각각 절대우위를 점합니다.
+                        </li>
+                        <li>
+                            <strong>Q3. 기회비용 계산:</strong> 
+                            <ul>
+                                <li>X국: 자동차 1대 = 20 / 10 = <strong>스마트폰 2대</strong>, 스마트폰 1대 = 10 / 20 = <strong>자동차 0.5(1/2)대</strong></li>
+                                <li>Y국: 자동차 1대 = 15 / 15 = <strong>스마트폰 1대</strong>, 스마트폰 1대 = 15 / 15 = <strong>자동차 1대</strong></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Q4. 비교우위:</strong>
+                            <ul>
+                                <li>자동차 기회비용은 Y국(스마트폰 1대)이 X국(스마트폰 2대)보다 낮으므로 <strong>Y국이 비교우위</strong>를 가집니다.</li>
+                                <li>스마트폰 기회비용은 X국(자동차 0.5대)이 Y국(자동차 1대)보다 낮으므로 <strong>X국이 비교우위</strong>를 가집니다.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Q5. 교역조건 범위:</strong> 
+                            <ul>
+                                <li>자동차 1대당 스마트폰 교환 비율: 양국의 자동차 기회비용 범위인 <strong>스마트폰 1대 초과, 2대 미만</strong> ($1 < \text{자동차 1대} < 2$)</li>
+                                <li>스마트폰 1대당 자동차 교환 비율: 양국의 스마트폰 기회비용 범위인 <strong>자동차 0.5대 초과, 1대 미만</strong> ($0.5 < \text{스마트폰 1대} < 1$)</li>
+                            </ul>
+                            양국이 자발적 무역에 참여하기 위해서는 수출 재화의 상대가격이 자국 내 기회비용보다 높아야 하고, 수입 재화의 획득 대가는 자국 내 생산 기회비용보다 낮아야 합니다.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="solution-item mt-4">
+                    <h4>[분석 2] 생산비용 기준 상세 해설</h4>
+                    <ul>
+                        <li>
+                            <strong>Q1. 절대우위:</strong> 단위당 소요 시간(생산비용)을 비교할 때, 의류는 A국(4시간 &lt; 6시간)이, 신발은 B국(3시간 &lt; 8시간)이 적은 시간이 투입되므로 각각 절대우위를 점합니다.
+                        </li>
+                        <li>
+                            <strong>Q3. 기회비용 계산:</strong>
+                            <ul>
+                                <li>A국: 의류 1벌 = 4 / 8 = <strong>신발 0.5(1/2)켤레</strong>, 신발 1켤레 = 8 / 4 = <strong>의류 2벌</strong></li>
+                                <li>B국: 의류 1벌 = 6 / 3 = <strong>신발 2켤레</strong>, 신발 1켤레 = 3 / 6 = <strong>의류 0.5(1/2)벌</strong></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Q4. 비교우위 및 특화:</strong>
+                            <ul>
+                                <li>의류 기회비용은 A국(신발 0.5켤레)이 B국(신발 2켤레)보다 낮으므로 <strong>A국이 의류 생산에 특화</strong>합니다.</li>
+                                <li>신발 기회비용은 B국(의류 0.5벌)이 A국(의류 2벌)보다 낮으므로 <strong>B국이 신발 생산에 특화</strong>합니다.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="solution-item mt-4">
+                    <h4>[분석 3] 생산가능곡선 작도 및 비교우위 해설</h4>
+                    <ul>
+                        <li>
+                            <strong>Q1. 최대 생산량 표:</strong> 
+                            <ul>
+                                <li>갑국: 옷 20벌 (Y축 절편), 쌀 40가마 (X축 절편)</li>
+                                <li>을국: 옷 30벌 (Y축 절편), 쌀 30가마 (X축 절편)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Q2. 기회비용 계산 (기울기 분석):</strong>
+                            <ul>
+                                <li>갑국 옷 1벌 생산의 기회비용 = 40 / 20 = <strong>쌀 2가마</strong> (곡선 기울기의 절댓값)</li>
+                                <li>을국 옷 1벌 생산의 기회비용 = 30 / 30 = <strong>쌀 1가마</strong> (곡선 기울기의 절댓값)</li>
+                                <li>갑국 쌀 1가마 생산의 기회비용 = 20 / 40 = <strong>옷 0.5(1/2)벌</strong> (곡선 기울기 역수의 절댓값)</li>
+                                <li>을국 쌀 1가마 생산의 기회비용 = 30 / 30 = <strong>옷 1벌</strong> (곡선 기울기 역수의 절댓값)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Q3. 비교우위 및 판정 근거:</strong>
+                            <ul>
+                                <li><strong>쌀 생산:</strong> 갑국(기회비용 옷 0.5벌)이 을국(기회비용 옷 1벌)보다 기회비용이 낮으므로 <strong>갑국이 비교우위</strong>를 가집니다.</li>
+                                <li><strong>옷 생산:</strong> 을국(기회비용 쌀 1가마)이 갑국(기회비용 쌀 2가마)보다 기회비용이 낮으므로 <strong>을국이 비교우위</strong>를 가집니다.</li>
+                                <li><strong>기하학적 근거:</strong> 가로축(X축)인 쌀 기준으로 생산가능곡선의 기울기가 상대적으로 더 완만(Flatter)하게 누워 있는 갑국이 쌀 생산의 기회비용이 적습니다. 반대로 세로축(Y축) 옷 기준으로 생산가능곡선이 상대적으로 더 완만(X축 기준으로 더 가파름)한 을국이 옷 생산의 기회비용이 적습니다.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="solution-item mt-4">
+                    <h4>[실전 연습] 연습문제 상세 해설</h4>
+                    <ul>
+                        <li>
+                            <strong>E1. 연습문제 1 정답: ②</strong>
+                            <ul>
+                                <li><strong>해설:</strong> Y재 1개 생산의 기회비용은 갑국이 X재 1.5개(150명 / 100명), 을국이 X재 2개(180명 / 90명)이므로 을국(2개)이 갑국(1.5개)보다 큽니다.</li>
+                                <li><strong>오답 분석:</strong>
+                                    <ul>
+                                        <li>① X재 1개 생산에 필요한 노동자가 갑국은 100명, 을국은 90명이므로, 동일 노동력 대비 최대 생산량은 을국이 더 많습니다.</li>
+                                        <li>③ X재 생산 비용(노동자 수)은 을국이 더 적기 때문에 X재 절대우위는 을국이 가집니다. Y재 생산 비용은 갑국이 더 적기 때문에 절대우위와 비교우위는 모두 갑국이 Y재에 대해 가집니다.</li>
+                                        <li>④ 을국의 X재 기회비용은 Y재 1/2개입니다. 교역 비율이 X재 1개당 Y재 1/2개이면 을국은 무역 이득이 전혀 없으므로 교역에 참여하지 않습니다.</li>
+                                        <li>⑤ 갑국은 Y재에 비교우위가 있어 Y재를 특화 수출하므로, 교역 후 자국의 Y재 1개 소비에 따른 기회비용은 교역 전(X재 1.5개 상당)보다 증가합니다.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mt-3">
+                            <strong>E2. 연습문제 2 정답: ②</strong>
+                            <ul>
+                                <li><strong>해설:</strong> X재 1단위 생산의 기회비용은 갑국이 Y재 1/2단위(10명 / 20명 = 0.5단위), 을국이 Y재 1/3단위(15명 / 45명 ≈ 0.33단위)이므로 갑국이 을국보다 큽니다.</li>
+                                <li><strong>오답 분석:</strong>
+                                    <ul>
+                                        <li>① 두 재화 모두 생산 소요 인원이 갑국이 더 적으므로(X재: 10 < 15, Y재: 20 < 45), 두 재화 생산의 절대우위는 모두 갑국이 가집니다.</li>
+                                        <li>③ Y재 1단위 생산 기회비용은 갑국이 X재 2단위(20/10), 을국이 X재 3단위(45/15)이므로 기회비용이 더 낮은 갑국이 Y재 생산의 비교우위를 가지며, 을국은 X재에 비교우위를 가집니다.</li>
+                                        <li>④ X재 1단위당 Y재 0.4단위 교환 조건은 갑국의 X재 기회비용(0.5단위)과 을국의 X재 기회비용(0.33단위) 사이의 조건으로 양국 모두에게 교역의 이득이 존재하여 둘 다 교역에 참여합니다.</li>
+                                        <li>⑤ 을국은 비교우위인 X재를 특화하여 수출하므로, 교역 후 을국의 X재 1단위 소비의 기회비용은 교역 전에 비해 증가합니다.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 푸터 -->
+        <footer class="worksheet-footer mt-5 text-center">
+            <p>© 2026 고등학교 통합사회 및 경제 - 무역 원리 실습 활동지</p>
+            <p class="no-print">본 실습지는 프린트 환경에 최적화되어 있습니다.</p>
+        </footer>
+    </div>
+
+    <!-- 제출 결과 모달 -->
+    <div id="result-modal" class="modal-overlay no-print" style="display: none;">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="trophy-circle">
+                    <i class="fa-solid fa-trophy trophy-icon" id="modal-icon"></i>
+                </div>
+                <h2>활동지 채점 결과</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-student-info" id="modal-student-info">
+                    - 학년 - 반 - 번 이름
+                </div>
+                <div class="modal-score-box">
+                    <span class="modal-score-label">최종 취득 점수</span>
+                    <div class="modal-score-values">
+                        <span class="modal-score-value" id="modal-score-text">0 / 35</span>
+                        <span class="modal-score-percent" id="modal-percent-text">(0%)</span>
+                    </div>
+                </div>
+                <p class="modal-feedback" id="modal-feedback-text">
+                    수고하셨습니다! 결과를 분석하는 중입니다.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-lg" id="modal-close-btn" style="border-radius: 30px; padding: 10px 30px; font-weight: 600; width: 100%; justify-content: center; box-shadow: var(--shadow-md);">
+                    확인 및 내 답안 피드백 보기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti Canvas (축하용) -->
+    <canvas id="confetti-canvas" class="no-print"></canvas>
+
+    <!-- 스크립트 연결 -->
+    <script src="app.js?v=2.0"></script>
+</body>
+</html>
