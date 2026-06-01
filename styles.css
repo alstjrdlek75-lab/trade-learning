@@ -364,6 +364,84 @@ body.teacher-mode .note-title {
 /* ==========================================
    학습지 본문 섹션
    ========================================== */
+/* 탭 메뉴 바 및 버튼 스타일 */
+.topic-tabs {
+    display: flex;
+    background: #f1f5f9;
+    padding: 6px;
+    border-radius: 14px;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border: 1px solid var(--border-color);
+}
+
+.topic-btn {
+    border: none;
+    background: transparent;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-main);
+}
+
+.topic-btn:hover {
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.topic-btn.active {
+    background: #ffffff;
+    color: var(--primary);
+    box-shadow: var(--shadow-sm), 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+body.teacher-mode .topic-btn.active {
+    color: var(--teacher-ink);
+}
+
+@media screen {
+    .worksheet-section {
+        display: none !important;
+        border-top: none !important;
+        padding-top: 0 !important;
+        margin-top: 20px !important;
+    }
+    .worksheet-section.active {
+        display: block !important;
+        animation: fadeInTab 0.35s ease forwards;
+    }
+    
+    /* 정답 및 해설용 특화 */
+    #teacher-guide {
+        display: none !important;
+        margin-top: 20px !important;
+    }
+    body.teacher-mode #teacher-guide.active {
+        display: block !important;
+        animation: fadeInTab 0.35s ease forwards;
+    }
+}
+
+@keyframes fadeInTab {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .worksheet-section {
     border-top: 2px dashed var(--border-color);
     padding-top: 35px;
@@ -1533,6 +1611,19 @@ body.teacher-mode .teacher-answer-lines {
     .btn,
     #confetti-canvas {
         display: none !important;
+    }
+    
+    /* 탭 모드 대응: 모든 워크시트 섹션을 순차 표출하되 정답 해설지는 정답 모드에서만 표출 */
+    .worksheet-section {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    .teacher-guide-section {
+        display: none !important;
+    }
+    body.teacher-mode .teacher-guide-section {
+        display: block !important;
     }
     
     /* 2. 전체적인 페이지 레이아웃 조정 */

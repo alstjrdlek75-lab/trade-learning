@@ -54,8 +54,27 @@
             </div>
         </header>
 
+        <!-- 탭 메뉴 (웹 화면용, 인쇄시 제외) -->
+        <nav class="topic-tabs no-print">
+            <button class="topic-btn active" data-tab="analysis1">
+                <span>📊</span> 분석 1 (생산량)
+            </button>
+            <button class="topic-btn" data-tab="analysis2">
+                <span>⏳</span> 분석 2 (생산비용)
+            </button>
+            <button class="topic-btn" data-tab="analysis3">
+                <span>📈</span> 분석 3 (생산가능곡선)
+            </button>
+            <button class="topic-btn" data-tab="practice">
+                <span>📝</span> 실전 연습
+            </button>
+            <button class="topic-btn" id="tab-btn-solutions" data-tab="solutions" style="display: none;">
+                <span>🔑</span> 정답 및 해설
+            </button>
+        </nav>
+
         <!-- 유형 1 섹션 -->
-        <section class="worksheet-section page-break">
+        <section class="worksheet-section page-break active" id="tab-analysis1">
             <div class="section-title">
                 <span class="section-number">분석 1</span>
                 <h2>생산량 기준 모형 <small>(동일한 생산요소 투입 시 최대 산출량)</small></h2>
@@ -323,7 +342,7 @@
         </section>
 
         <!-- 유형 2 섹션 -->
-        <section class="worksheet-section page-break">
+        <section class="worksheet-section page-break" id="tab-analysis2">
             <div class="section-title">
                 <span class="section-number">분석 2</span>
                 <h2>생산비용 기준 모형 <small>(재화 1단위를 생산하는 데 필요한 노동 시간)</small></h2>
@@ -585,7 +604,7 @@
         </section>
 
         <!-- 유형 3 섹션 (생산가능곡선 작도와 비교우위) -->
-        <section class="worksheet-section page-break">
+        <section class="worksheet-section page-break" id="tab-analysis3">
             <div class="section-title">
                 <span class="section-number">분석 3</span>
                 <h2>생산가능곡선(PPF)의 작도와 비교우위 <small>(인터랙티브 작도를 통한 그래프 기하학적 분석)</small></h2>
@@ -880,7 +899,7 @@
         </section>
 
         <!-- 실전 연습문제 섹션 -->
-        <section class="worksheet-section page-break">
+        <section class="worksheet-section page-break" id="tab-practice">
             <div class="section-title">
                 <span class="section-number">실전 연습</span>
                 <h2>실전 연습문제 <small>(수능/학평 유형 분석)</small></h2>

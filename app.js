@@ -20,22 +20,104 @@ document.addEventListener('DOMContentLoaded', () => {
     scorePercentageSpan.textContent = `(0%)`;
 
     // ==========================================
-    // 1. 모드 전환 제어 (학생용 vs 정답 모드)
+    // 1. 모드 전환 제어 (학생용 vs 정답 모드) & 탭 네비게이션
     // ==========================================
     let isTeacherMode = false;
+    let activeTab = 'analysis1';
     const teacherGuideSection = document.getElementById('teacher-guide');
+    const tabButtons = document.querySelectorAll('.topic-btn');
+
+    function switchTab(tabId) {
+        activeTab = tabId;
+        
+        // 탭 버튼 active 클래스 제어
+        tabButtons.forEach(btn => {
+            if (btn.getAttribute('data-tab') === tabId) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+
+        // 워크시트 섹션 활성화 제어
+        const sectionMap = {
+            'analysis1': 'tab-analysis1',
+            'analysis2': 'tab-analysis2',
+            'analysis3': 'tab-analysis3',
+            'practice': 'tab-practice',
+            'solutions': 'teacher-guide'
+        };
+
+        Object.entries(sectionMap).forEach(([key, id]) => {
+            const sec = document.getElementById(id);
+            if (sec) {
+                if (key === tabId) {
+                    sec.classList.add('active');
+                } else {
+                    sec.classList.remove('active');
+                }
+            }
+        });
+    }
+
+    function initTabNavigation() {
+        tabButtons.forEach(btn => {
+            const tabId = btn.getAttribute('data-tab');
+            btn.addEventListener('click', () => {
+                switchTab(tabId);
+                // 탭 전환 시 화면 위쪽으로 스크롤 이동
+                const container = document.querySelector('.worksheet-container');
+                if (container) {
+                    container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // 키보드 숫자키 지원 (학습지 접근성 향상)
+        document.addEventListener('keydown', (e) => {
+            const tabKeys = {
+                '1': 'analysis1',
+                '2': 'analysis2',
+                '3': 'analysis3',
+                '4': 'practice'
+            };
+            if (isTeacherMode) {
+                tabKeys['5'] = 'solutions';
+            }
+            if (tabKeys[e.key]) {
+                switchTab(tabKeys[e.key]);
+                const container = document.querySelector('.worksheet-container');
+                if (container) {
+                    container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        });
+    }
 
     function updateModeUI() {
+        const solutionsTabBtn = document.getElementById('tab-btn-solutions');
         if (isTeacherMode) {
             document.body.classList.add('teacher-mode');
             labelStudent.classList.remove('active');
             labelTeacher.classList.add('active');
             scoreBar.style.display = 'none'; // 정답 모드에서는 채점 바 숨김
+            
+            if (solutionsTabBtn) {
+                solutionsTabBtn.style.display = 'flex';
+            }
+            switchTab('solutions');
         } else {
             document.body.classList.remove('teacher-mode');
             labelStudent.classList.add('active');
             labelTeacher.classList.remove('active');
             scoreBar.style.display = 'block'; // 학생용 모드에서는 채점 바 노출
+            
+            if (solutionsTabBtn) {
+                solutionsTabBtn.style.display = 'none';
+            }
+            if (activeTab === 'solutions') {
+                switchTab('analysis1');
+            }
         }
     }
 
@@ -43,12 +125,13 @@ document.addEventListener('DOMContentLoaded', () => {
         isTeacherMode = !isTeacherMode;
         updateModeUI();
 
-        // 정답 모드 활성화 시 해설 섹션으로 자동 부드러운 스크롤
-        if (isTeacherMode && teacherGuideSection) {
-            setTimeout(() => {
-                teacherGuideSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 100);
-        }
+        // 정답 모드 활성화 시 상단으로 스크롤
+        setTimeout(() => {
+            const container = document.querySelector('.worksheet-container');
+            if (container) {
+                container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }, 100);
     }
 
     modeToggleBtn.addEventListener('click', toggleMode);
@@ -65,12 +148,12 @@ document.addEventListener('DOMContentLoaded', () => {
             isTeacherMode = true;
             updateModeUI();
             
-            // 정답 모드 활성화 시 해설 섹션으로 자동 부드러운 스크롤
-            if (teacherGuideSection) {
-                setTimeout(() => {
-                    teacherGuideSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }, 100);
-            }
+            setTimeout(() => {
+                const container = document.querySelector('.worksheet-container');
+                if (container) {
+                    container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
         }
     });
 
@@ -558,4 +641,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
         }, 4000);
     }
+
+    // 탭 네비게이션 초기화
+    initTabNavigation();
 });
